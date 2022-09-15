@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Pagina web basica</title>
+
+</head>
+<body>
+
+    <div class="head">
+
+        <div class="logo">
+           <img src="img/logo .png" alt="">
+        </div>
+
+        <nav class="navbar">
+            <a href="#">Inicio</a>
+            <a href="#">Nosotros</a>
+            <a href="#">Conacto</a>
+            <a href="#">Productos</a>
+            <a href="#">Precio</a>
+        </nav>
+
+    </div>
+
+    <header class="content header">
+        <h2 class="title">Inicio</h2>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+             Ipsam necessitatibus odio quisquam reprehenderit quas, 
+             obcaecati, harum hic molestiae sequi ipsa nihil id tempore explicabo 
+            libero vero quia asperiores similique dicta.
+        </p>
+
+        <div class="btn-home">
+            <button class="btn btn-agregar" id="btnCita">Pedír Cita</button>
+            <button class="btn-agregar btn" id="btn-agregar">Registrate</button>
+        </div>
+    </header>
+
+    <section class="content sau">
+
+        <h2 class="title">Productos</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing 
+            elit. Veritatis excepturi dolore, harum asperiores 
+            cupiditate officiis quia odit reiciendis quidem iure 
+            architecto laudantium 
+            nihil saepe pariatur vel labore molestias consectetur veniam?</p>
+        
+        <div class="box-container">
+
+             <!-- <div class="box">
+                <i class="fab fa-angular"></i>
+                <h3>Lorem</h3>
+                <p>labore molestias consectetur veniam</p>
+            </div>  -->
+            <div class="box">
+                <a href="https://www.apple.com/es/app-store/"><i class="fab fa-apple"></i></a>
+                <h3>Lorem</h3>
+                <p>labore molestias consectetur veniam</p>
+            </div>
+            <div class="box">
+                <a href="https://play.google.com/store/games?hl=es_419&gl=US"><i class="fab fa-android"></i></a>
+                <h3>Lorem</h3>
+                <p>labore molestias consectetur veniam</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="content about">
+
+        <h2 class="title">Nosotros</h2>
+        <p>Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Ut soluta similique 
+            quia reprehenderit eligendi aliquam. Sit 
+            odio impedit quibusdam. Velit corporis, 
+            optio debitis quidem ex ipsam rerum dolorem autem sequi.
+        </p>
+
+        <a href="img/plano.jpg" class="btn">Saber mas</a>
+
+    </section>
+
+    <section class="content price">
+
+        <article class="contain">
+            <h2 class="title">Precio</h2>
+            <p>Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Ut soluta similique 
+                quia reprehenderit eligendi aliquam. Sit 
+                odio impedit quibusdam. Velit corporis, 
+                optio debitis quidem ex ipsam rerum dolorem autem sequi.
+            </p>
+
+            <a href="http://www.museojurasicoasturias.com/5/visitas/29/tarifas.html" class="btn">Saber precio</a>
+
+        </article>
+
+    </section>
+
+    <section class="content contact">
+        <h2 class="title">Contacto</h2>
+        <p>48481548</p>
+        <figure class="map">
+            <!-- Implementando código iframe que nos proporciana google maps para poner mapas en tiempo real y dinámicos -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d442.3458418117147!2d-58.557226!3d-27.5076291!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94454588c7ede0df%3A0x2b42939d0dad8964!2sMuseo%20del%20Pueblo%20Peregrino!5e0!3m2!1ses!2ses!4v1663192135397!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </figure>
+    </section>
+    
+    <!-- Modal registrar -->
+    <div id="modal" class="modale" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-header">
+            <h2>Regístrese</h2>
+            <a href="" id="btn-cerrar" class="btn-close closemodale" aria-hidden="true">&times;</a>
+          </div>
+
+          <div class="modal-body">
+            <input type="hidden" id = "txtId"  placeholder="ID" size="20" /><br>
+            <input type="text" id = "txtFirstname"  placeholder="Nombre" size="20" /><br>
+            <input type="text" id = "txtLastname" placeholder="Apellido" size="20" /><br>
+            <input type="email" id = "txtEmail" placeholder="Email" size="20" /><br>
+            <input type="text" id = "txtPhone" placeholder="Teléfono" size="20" /><br>
+            <input type="text" id = "txtAddress" placeholder="Dirección" size="20" /><br>
+          
+            <div class="modal-footer">
+            <button href="" class="btn-registrar" id="btnIngresar">Registrar</button>
+          </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Modal pedir cita -->
+    <div id="modal-cita" class="modale" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-header">
+            <h2>Reserva tu cita</h2>
+            <a href="" id="btn-cerrar" class="btn-close closemodale" aria-hidden="true">&times;</a>
+          </div>
+
+          <div class="modal-body">
+            <input type="hidden" id = "txtId"  placeholder="ID" size="20" /><br>
+            <input type="text" id = "txtFirstname"  placeholder="Nombre" size="20" /><br>
+            <input type="text" id = "txtLastname" placeholder="Apellido" size="20" /><br>
+            <input type="email" id = "txtEmail" placeholder="Email" size="20" /><br>
+            <input type="date" id = "txtPhone" placeholder="Teléfono" size="20" /><br>
+            <!-- <input type="text" id = "txtAddress" placeholder="Dirección" size="20" /><br> -->
+          
+            <div class="modal-footer">
+            <button href="" class="btn-registrar" id="btnIngresar">Envíar Cita</button>
+          </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+<!-- Enlazando script para añadir funcionalidad a los botones -->
+
+<script src="main.js"></script>
+</html>
